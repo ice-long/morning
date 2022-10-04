@@ -38,7 +38,7 @@ def get_birthday():
     next = next.replace(year=next.year + 1)
   return (next - today).days
 
-def get_birthday(birthday2):
+def get_birthday2(birthday2):
   next = datetime.strptime(str(date.today().year) + "-" + birthday2, "%Y-%m-%d")
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
@@ -61,6 +61,6 @@ wm = WeChatMessage(client)
 wea, temperature = get_weather()
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count()},"birthday_left":{"value":get_birthday()},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template(user_id, template_id, data)
-data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count('2022-08-09')},"birthday_left":{"value":get_birthday('05-20')},"words":{"value":get_words(), "color":get_random_color()}}
+data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2022-08-09')},"birthday_left":{"value":get_birthday2('05-20')},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template('osRW8577rO31NJIf7irM7kP7TZc0', template_id, data)
 print(res)
