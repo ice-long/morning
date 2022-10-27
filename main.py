@@ -81,4 +81,6 @@ data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":
 res = wm.send_template('osRW85xfhdjm0et8914QfyJr5dh8', template_id, data)
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2022-10-27')},"birthday_left":{"value":get_birthday2('05-13')},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template('osRW85zWSt7d64op564lD3NY_f6Y', template_id, data)
+data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2021-9-22')},"birthday_left":{"value":get_birthday2('01-06')},"words":{"value":get_words(), "color":get_random_color()}}
+res = wm.send_template('osRW850l2vbqpDFvQ0H2S8LRO1VU', template_id, data)
 print(res)
