@@ -75,8 +75,10 @@ data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":
 res = wm.send_template('osRW858UE3f4owXx9trYXa6paB2k', template_id, data)
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2022-10-02')},"birthday_left":{"value":get_birthday2('03-27')},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template('osRW857BFhC5nuBj5t7pbnT0ZxY8', template_id, data)
-data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2021-12-25')},"birthday_left":{"value":get_birthday2('02-14')},"words":{"value":get_words(), "color":get_random_color()}}
+data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2021-12-25')},"birthday_left":{"value":get_birthday2('03-02')},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template('osRW856FkPYD05_F15QABG4gDF7Y', template_id, data)
 data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2021-08-12')},"birthday_left":{"value":get_birthday2('07-09')},"words":{"value":get_words(), "color":get_random_color()}}
 res = wm.send_template('osRW85xfhdjm0et8914QfyJr5dh8', template_id, data)
+data = {"weather":{"value":wea},"temperature":{"value":temperature},"love_days":{"value":get_count2('2022-10-27')},"birthday_left":{"value":get_birthday2('05-13')},"words":{"value":get_words(), "color":get_random_color()}}
+res = wm.send_template('osRW85zWSt7d64op564lD3NY_f6Y', template_id, data)
 print(res)
